@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  float: left;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff9e1;
+}
+
+.logo {
+    margin-left: 110px;
+    padding: 0px 0;
+    width: 900px;
+    height: 350px;
+}
+
+.header {
+  margin-left: 0px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  margin-left: 0px;
+  padding-top: 20px;
+}
+
+.footer td {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.logosmall {
+  margin-left: 50px;
+  padding: 0px 0;
+  width: 300px;
+  height: 150px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  padding-top: 25px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9b1111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: #fff9e1;
+  padding: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #fff9e1;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+.menu {
+  background-image: url("../images/menuback.jpeg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  color: white;
+  margin-left: 200px;
+  padding-left: 50px;
+  padding-right: 120px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  position: relative;
+  width: 724px;
+  height: 500px;
+  text-align: right;
+}
+
+.coffee {
+  background-image: url("../images/coffee.jpeg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  color: black;
+  margin-left: 275px;
+  margin-top: 50px;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 569px;
+  height: 500px;
+  text-align: right;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 360px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

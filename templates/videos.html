@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% set active_page = "kiosk_index" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<body>
+<h1>Condor Web Server with ESP32 - AP Mode</h1>
+<input type=button value='Set time' onClick='ajx("c=h&n="+$("n").value)'/>
+<input type=number id=n value='36000'/>
+<p><input type=button value='Get temp.' onClick='ajx("c=t")'/>
+<pre id='f'></pre>";
+</body>
+</html>	
+<script type='text/javascript'>
+$=i=>document.getElementById(i);
+ajx=u=>{
+	var x = new XMLHttpRequest();
+	x.onreadystatechange = () => {
+		if (x.readyState == 4) {
+		if (x.status == 200) $('f').innerHTML += '\\n'+x.responseText;
+		else $('f').innerHTML = 'Err: ' + x.status;
+		}
+	};
+	x.open('GET', '?'+u, true);
+	x.send(null)
+}
+</script>
+
+{% endblock %}
